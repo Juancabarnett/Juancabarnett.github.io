@@ -1,30 +1,49 @@
-/* Estilos para la sección con formulario */
+// Mixin para establecer la fuente
+@mixin font-family {
+    font-family: 'Black Ops One', cursive;
+}
+
+// Extend para el color de texto oscuro
+%text-dark {
+    color: #000 !important;
+}
+
+// Mixin para el estilo del footer
+@mixin footer-styles {
+    background-color: #111;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+// Estilos para la sección con formulario
 .bordered-section {
+    @include font-family;
     padding: 20px;
     border-radius: 8px;
     background-color: #fff;
     margin: 20px 0;
-}
 
-.form-label {
-    font-weight: bold;
-}
+    .form-label {
+        font-weight: bold;
+    }
 
-.form-control {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #000000;
-    border-radius: 4px;
-    color: #fff;
-    background-color: transparent;
-}
+    .form-control {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #000000;
+        border-radius: 4px;
+        color: #fff;
+        background-color: transparent;
+    }
 
-button[type="submit"] {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
+    button[type="submit"] {
+        background-color: #000;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
 }
-

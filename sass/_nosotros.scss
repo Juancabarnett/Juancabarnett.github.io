@@ -1,19 +1,27 @@
+@mixin center-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin button-styles {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
 .btn-saber-mas {
-    position: absolute; /* Establecer posición absoluta en relación con el elemento padre */
-    top: 50%; /* Centrar verticalmente en el medio */
-    left: 50%; /* Centrar horizontalmente en el medio */
-    transform: translate(-50%, -50%); /* Alinear el botón en el centro */
-    background-color: #000; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    text-decoration: none; /* Sin subrayado */
-    font-size: 16px; /* Tamaño de fuente */
-    transition: background-color 0.3s, color 0.3s; /* Transición de color */
+    @include center-absolute;
+    @include button-styles;
 }
 
 .btn-saber-mas:active {
-    background-color: #fff; /* Color de fondo al hacer clic */
-    color: #000; /* Color de texto al hacer clic */
+    background-color: #fff;
+    color: #000;
 }

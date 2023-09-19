@@ -1,11 +1,42 @@
 
-h1{
-    font-family: 'Black Ops One', cursive; 
+// Mixin para establecer la fuente
+@mixin font-family {
+    font-family: 'Black Ops One', cursive;
+}
+
+// Extend para el color de texto oscuro
+%text-dark {
+    color: #000 !important;
+}
+
+// Mixin para el estilo del footer
+@mixin footer-styles {
+    background-color: #111;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+// Aplicar mixins y extends a los estilos existentes
+h1, h2 {
+    @include font-family;
+}
+
+.text-dark {
+    @extend %text-dark;
+}
+
+.navbar {
+    background-color: #000;
+    .nav-item {
+        margin-right: 20px;
+        }
 }
 
 
-h2{
-    font-family: 'Black Ops One', cursive; 
+.footer {
+    @include footer-styles;
 }
 
 body {
@@ -14,18 +45,4 @@ body {
     min-height: 100vh;
     margin: 0;
     overflow-x: hidden;
-}
-
-
-.text-dark {
-    color: #000 !important;
-}
-
-/* Estilos para el footer */
-.footer {
-    background-color: #111;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-margin-top: auto;
 }
