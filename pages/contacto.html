@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Motomania</title>
+  <meta name="description" content="Ponte en contacto con Motomania para cualquier consulta o solicitud. Nuestro equipo de atención al cliente está listo para ayudarte.">
+  <!-- Resto de tus enlaces CSS y otros elementos de cabeza aquí -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/archive.css">
-
 </head>
+
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-black">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/index.html">
         <img class="logo" src="../images/MOTOMANIA.jpg" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +28,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+            <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./nosotros.html">Nosotros</a>
@@ -34,33 +40,34 @@
             <a class="nav-link" href="./noticias.html">Noticias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./contacto.html">Contacto</a>
+            <a class="nav-link active" href="./contacto.html">Contacto</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
+
   <section class="bordered-section">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6" >
                 <h1>Formulario de Contacto</h1>
                 <form action="/procesar_formulario" method="POST">
                     <section>
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@example.com" required>
+                        <div class="mb-3" data-aos="fade-right">
+                            <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="indicar correo" required>
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <div class="mb-3" data-aos="fade-right">
+                            <label for="exampleFormControlTextarea1" class="form-label">Asunto</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" name="mensaje" rows="3" required></textarea>
                         </div>
                     </section>
                     <button type="submit">Enviar Mensaje</button>
                 </form>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-right">
                 <div class="image-container">
                     <img src="../images/TIenda Motomania.jpg" alt="">
                 </div>
@@ -69,11 +76,51 @@
     </div>
 </section>
 
+<div class="container mt-4">
+  <div class="row">
+      <!-- Columna para el mapa -->
+      <div class="col-md-6" data-aos="fade-right">
+          <h2>Ubicación</h2>
+          <!-- Inserta tu iframe de Google Maps aquí -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15598.56559467402!2d-77.03811754458006!3d-12.204785999999974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b9f7e4899ef5%3A0x58d573a61aebcdc4!2sMOTOFORCE%20PERU%20SAC!5e0!3m2!1sen!2spe!4v1695102267201!5m2!1sen!2spe" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <!-- Columna para los datos de contacto -->
+      <div class="col-md-6" data-aos="fade-right">
+          <h2>Datos de Contacto</h2>
+          <p><strong>Dirección:</strong> Calle Principal, Ciudad</p>
+          <p><strong>Teléfono:</strong> (123) 456-7890</p>
+          <p><strong>Correo Electrónico:</strong> motomania@gmail.com</p>
+          <!-- Redes Sociales -->
+          <div class="d-flex align-items-center" data-aos="fade-right">
+              <!-- Enlace a Facebook (con imagen opcional) -->
+              <a href="https://www.facebook.com/tu_pagina_de_facebook" target="_blank">
+                  <img src="../images/facebook-logo.png" alt="Facebook" width="30" height="30">
+              </a>
+              <!-- Enlace a Twitter (con imagen opcional) -->
+              <a href="https://www.twitter.com/tu_cuenta_de_twitter" target="_blank">
+                  <img src="../images/whatsapp-logo.png" alt="Twitter" width="30" height="30">
+              </a>
+              <!-- Enlace a Instagram (con imagen opcional) -->
+              <a href="https://www.instagram.com/tu_cuenta_de_instagram" target="_blank">
+                  <img src="../images/instagram-logo.png" alt="Instagram" width="30" height="30">
+              </a>
+          </div>
+      </div>
+  </div>
+</div>
+
 <footer class="footer">
   <div class="container">
     <p>&copy; 2023 Mi Sitio Web. Todos los derechos reservados.</p>
   </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 </html>

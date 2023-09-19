@@ -1,0 +1,31 @@
+
+h1{
+    font-family: 'Black Ops One', cursive; 
+}
+
+
+h2{
+    font-family: 'Black Ops One', cursive; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+.text-dark {
+    color: #000 !important;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+margin-top: auto;
+}

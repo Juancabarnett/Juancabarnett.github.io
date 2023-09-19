@@ -1,0 +1,30 @@
+/* Estilos para la sección con formulario */
+.bordered-section {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    color: #fff;
+    background-color: transparent;
+}
+
+button[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+

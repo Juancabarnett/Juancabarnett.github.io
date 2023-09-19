@@ -1,0 +1,72 @@
+        /* Estilos personalizados */
+        .advantages-section {
+            background-color: #000;
+            color: #fff;
+            padding: 3rem 0; /* Cambiado a rem */
+        }
+
+        .advantage-icon {
+            font-size: 3rem; /* Cambiado a rem */
+            margin-bottom: 2rem; /* Cambiado a rem */
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .advantage-title {
+            font-size: 1.5rem; /* Cambiado a rem */
+            font-weight: bold;
+            margin-bottom: 1rem; /* Cambiado a rem */
+        }
+
+        .advantage-description {
+            font-size: 1rem; /* Cambiado a rem */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Estilos adicionales para evitar el desplazamiento horizontal en dispositivos móviles */
+        body {
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 100%;
+        }
+
+        .carousel-inner img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 767px) {
+            .desktop-video {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .btn-botón-comprar{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #000;
+            color: #fff;
+            padding: 20px 40px; /* Aumenté el espaciado interno para hacer el botón más grande */
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 20px; /* Aumenté el tamaño de la fuente */
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .btn-botón-comprar:hover {
+            background-color: #fff; /* Cambia el color de fondo al hacer hover */
+            color: #000; /* Cambia el color del texto al hacer hover */
+        }

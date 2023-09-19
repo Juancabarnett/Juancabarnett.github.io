@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motomania</title>
+    <title>Motomania - Tienda de Motos</title>
+    <meta name="description" content="Encuentra una amplia selección de motocicletas y accesorios en Motomania, tu tienda de confianza para amantes de las motos. Descubre ofertas exclusivas y experimenta la emoción de la conducción.">
+    <!-- enlaces referidos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../CSS/archive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/archive.css">
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-black">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/index.html">
         <img class="logo" src="../images/MOTOMANIA.jpg" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,28 +30,31 @@
             <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./tIenda.html">Tienda</a>
+            <a class="nav-link" href="./pages/tIenda.html">Tienda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./noticias.html">Noticias</a>
+            <a class="nav-link" href="./pages/noticias.html">Noticias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./contacto.html">Contacto</a>
+            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
       <!-- carrousel de productos -->
       <section id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+        <div class=" max-width: 100% carousel-inner">
+          <div  class="carousel-item active">
+            <a href="./pages/tIenda.html" class="btn btn-botón-comprar d-none d-md-block">Adquiere tu moto</a>
             <img src="../images/slide1.jpg" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item max-width: 100%">
+            <a href="./pages/tIenda.html" class="btn btn-botón-comprar">Modelos únicos</a>
             <img src="../images/slide2.png" class="d-block w-100" alt="...">
           </div>
         </div>
@@ -58,7 +68,7 @@
         </button>
       </section>
 
-      <section class="d-none d-sm-none d-md-block container-lg w-50 text-center"> 
+      <section class="d-none d-sm-none d-md-block container-lg w-50 text-center  "> 
         <div>
           <h1>Vive el Mundo de las <span class="text-danger"> Motos </span></h1>
           <p> <span class="text-danger"> En Motomania</span> explora el apasionante mundo de las dos ruedas mientras descubres las últimas novedades en modelos, tecnología y tendencias del universo motociclista. Desde las clásicas leyendas de dos ruedas hasta las innovadoras maravillas de ingeniería, nuestro sitio te sumergirá en un viaje lleno de aventuras sobre motocicletas. ¿Estás listo para acelerar con nosotros? ¡Sigue leyendo y déjate llevar por la emoción de la carretera abierta!</p>
@@ -66,8 +76,8 @@
       </section>
 
       <!-- Sección de Ventajas de la Tienda de Motos -->
-  <section class="advantages-section">
-    <div class="container">
+  <section class=" advantages-section animate__animated animate__fadeInRightBig">
+    <div data-aos="fade-down" class="container ">
       <div class="row">
         <div class="col-md-3">
           <div class="text-center">
@@ -123,19 +133,20 @@
         </div>
       </div>
     </div>
+
   </section>
       <section class="container mt-5">
         <h2>TIENDA DE MOTOS</h2>
       </section>
     
-      <section class="container border border-dark">
+      <section class="container border border-dark animacion ">
         <div>
         </div>
         <div class="row">
         </div>
         <div class="row">
           <!-- Primer Producto -->
-          <div class="col-md-3">
+          <div class="col-md-3" data-aos="fade-up">
             <div class="product-box">
               <div class="product-inner-box position-relative">
                 <div class="icons">
@@ -147,7 +158,7 @@
                 </div>
                 <img src="../images/modelo1.png" alt="motokawasaki" class="img-fluid">
                 <div class="cart-btn">
-                  <a href="./contacto.html" class="btn btn-white shadow-sm rounded-pill"><i class="bi bi-cart"></i> Cotizar</a>
+                  <a href="./pages/contacto.html" class="btn btn-white shadow-sm rounded-pill"><i class="bi bi-cart"></i> Cotizar</a>
                 </div>
               </div>
               <div class="product-info">
@@ -162,7 +173,7 @@
           </div>
           
           <!-- Segundo Producto -->
-          <div class="col-md-3">
+          <div class="col-md-3" data-aos="fade-up">
             <div class="product-box">
               <div class="product-inner-box position-relative">
                 <div class="icons">
@@ -174,7 +185,7 @@
                 </div>
                 <img src="../images/modelo 2.webp" alt="Zuzuki 365" class="img-fluid">
                 <div class="cart-btn">
-                  <a href="./contacto.html" class="btn btn-white shadow-sm rounded-pill"><i class="bi bi-cart"></i> Cotizar</a>
+                  <a href="./pages/contacto.html" class="btn btn-white shadow-sm rounded-pill"><i class="bi bi-cart"></i> Cotizar</a>
                 </div>
               </div>
               <div class="product-info">
@@ -189,7 +200,7 @@
           </div>
           
           <!-- Tercer Producto -->
-          <div class="col-md-3">
+          <div class="col-md-3" data-aos="fade-up">
             <div class="product-box">
               <div class="product-inner-box position-relative">
                 <div class="icons">
@@ -201,7 +212,7 @@
                 </div>
                 <img src="../images/modelo3.webp" alt="zuzuki 700" class="img-fluid">
                 <div class="cart-btn">
-                  <a href="./contacto.html" class="btn btn-white shadow-sm rounded-pill"><i class="bi bi-cart"></i> Cotizar</a>
+                  <a href="./pages/contacto.html" class="btn btn-white shadow-sm rounded-pill"><i class="bi bi-cart"></i> Cotizar</a>
                 </div>
               </div>
               <div class="product-info">
@@ -216,7 +227,7 @@
           </div>
           
           <!-- Cuarto Producto -->
-          <div class="col-md-3">
+          <div class="col-md-3" data-aos="fade-up">
             <div class="product-box">
               <div class="product-inner-box position-relative">
                 <div class="icons">
@@ -228,7 +239,7 @@
                 </div>
                 <img src="../images/modelo4.png" alt="moto captiva" class="img-fluid">
                 <div class="cart-btn">
-                  <a href="./contacto.html" class="btn btn-white shadow-sm rounded-pill"><i class="bi bi-cart"></i> Cotizar</a>
+                  <a href="./pages/contacto.html" class="btn btn-white shadow-sm rounded-pill"><i class="bi bi-cart"></i> Cotizar</a>
                 </div>
               </div>
               <div class="product-info">
@@ -244,32 +255,35 @@
         </div>
       </section>
     
-      <section class="container mt-5">
+      <section class="container mt-5 d-none d-md-block " data-aos="fade-up">
         <div class="subtitle">
-          <h2>NOTICIAS SOBRE MOTOS</h2>
+            <h2>NOTICIAS SOBRE MOTOS</h2>
         </div>
         <div class="row">
-          <div class="col-md-6">
-            <div class="embed-responsive embed-responsive-16by9">
-              <b><iframe width="560" height="315" src="https://www.youtube.com/embed/-eN1YdUBHBE?si=_sH4BPot6D3tWY3x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></b>
+            <div class="col-md-6 d-none d-md-block">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <b><iframe width="560" height="315" src="https://www.youtube.com/embed/-eN1YdUBHBE?si=_sH4BPot6D3tWY3x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></b>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="embed-responsive embed-responsive-16by9">
-              <b><iframe width="560" height="315" src="https://www.youtube.com/embed/PHvEbt3fO84?si=eZEj6IDsfh4RS89S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></b>
+            <div class="col-md-6 d-none d-md-block">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <b><iframe width="560" height="315" src="https://www.youtube.com/embed/PHvEbt3fO84?si=eZEj6IDsfh4RS89S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></b>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-
-      <footer class="footer">
-        <div class="container">
-          <p>&copy; 2023 Mi Sitio Web. Todos los derechos reservados.</p>
-        </div>
-      </footer>
-
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Mi Sitio Web. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
 </html>

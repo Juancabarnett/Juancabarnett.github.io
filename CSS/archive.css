@@ -1,155 +1,221 @@
-/* Estilos generales */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
+@charset "UTF-8";
+h1 {
+  font-family: "Black Ops One", cursive;
 }
 
+h2 {
+  font-family: "Black Ops One", cursive;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
 
 .text-dark {
-    color: #000 !important;
-}
-
-/* Estilos para el navbar */
-.navbar {
-    background-color: #000;
-}
-
-.navbar-nav {
-    justify-content: center;
-}
-
-.nav-item {
-    margin-right: 20px;
-}
-
-/* Estilos para la sección con borde */
-.bordered-section {
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #fff;
-    margin: 20px 0;
-}
-
-.form-label {
-    font-weight: bold;
-}
-
-.form-control {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #000000;
-    border-radius: 4px;
-    color: #fff;
-    background-color: transparent;
-}
-
-button[type="submit"] {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-/* Estilos para las cajas de producto */
-.product-box {
-    position: relative;
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-
-.product-inner-box .icons {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    right: 0; 
-    gap: 4px;
-    top: 12%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color: #fff;
-}
-
-.product-inner-box img {
-    box-shadow: 0px 33px 61px -29px rgb(0 0 0/ 10%);
-    height: auto;
-    width: 100%;
-    object-fit: cover; 
-}
-
-.cart-btn {
-    position: absolute;
-    bottom: 20px;
-    text-align: center;
-    width: 100%;
-    transform: translateX(-50%);
-    left: 50%;
-    transition: background-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-    opacity: 0;
-}
-
-.cart-btn a {
-    border-radius: 50px;
-    background-color: #000;
-    border: 1px solid #ffffff;
-    color: #fff;
-    transition: background-color 0.3s, color 0.3s;
-    display: inline-block;
-    padding: 6px 16px;
-    text-decoration: none;
-}
-
-.cart-btn a:hover {
-    background-color: #920000;
-    color:white;
-}
-
-.product-box:hover .cart-btn {
-    opacity: 1;
-}
-
-/* Estilos para la sección de ventajas */
-
-.advantages-section{
-    background-color: #000;
-    color: #fff;
-    padding: 50px 0;
-}
-
-.advantage-icon {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.image-container img {
-    max-width: 100%;
-    height: auto;
-  }
-
-.advantage-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.advantage-description {
-    font-size: 16px;
+  color: #000 !important;
 }
 
 /* Estilos para el footer */
 .footer {
-    background-color: #111;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-margin-top: auto;
+  background-color: #111;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: auto;
 }
 
+.navbar {
+  background-color: #000;
+}
+.navbar .nav-item {
+  margin-right: 20px;
+}
+
+/* Estilos para las cajas de producto */
+.product-box {
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.product-inner-box .icons {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  gap: 4px;
+  top: 12%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.product-box:hover .cart-btn {
+  opacity: 1;
+}
+
+.product-inner-box img {
+  box-shadow: 0px 33px 61px -29px rgba(0, 0, 0, 0.1);
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cart-btn {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+  transform: translateX(-50%);
+  left: 50%;
+  transition: background-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.cart-btn a {
+  border-radius: 50px;
+  background-color: #000;
+  border: 1px solid #ffffff;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+  padding: 6px 16px;
+  text-decoration: none;
+}
+
+.cart-btn a:hover {
+  background-color: #920000;
+  color: white;
+}
+
+/* Estilos para la sección con formulario */
+.bordered-section {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 20px 0;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  color: #fff;
+  background-color: transparent;
+}
+
+button[type=submit] {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilos personalizados */
+.advantages-section {
+  background-color: #000;
+  color: #fff;
+  padding: 3rem 0; /* Cambiado a rem */
+}
+
+.advantage-icon {
+  font-size: 3rem; /* Cambiado a rem */
+  margin-bottom: 2rem; /* Cambiado a rem */
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.advantage-title {
+  font-size: 1.5rem; /* Cambiado a rem */
+  font-weight: bold;
+  margin-bottom: 1rem; /* Cambiado a rem */
+}
+
+.advantage-description {
+  font-size: 1rem; /* Cambiado a rem */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos adicionales para evitar el desplazamiento horizontal en dispositivos móviles */
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.carousel-inner img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .desktop-video {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.btn-botón-comprar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+  color: #fff;
+  padding: 20px 40px; /* Aumenté el espaciado interno para hacer el botón más grande */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 20px; /* Aumenté el tamaño de la fuente */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-botón-comprar:hover {
+  background-color: #fff; /* Cambia el color de fondo al hacer hover */
+  color: #000; /* Cambia el color del texto al hacer hover */
+}
+
+.btn-saber-mas {
+  position: absolute; /* Establecer posición absoluta en relación con el elemento padre */
+  top: 50%; /* Centrar verticalmente en el medio */
+  left: 50%; /* Centrar horizontalmente en el medio */
+  transform: translate(-50%, -50%); /* Alinear el botón en el centro */
+  background-color: #000; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  text-decoration: none; /* Sin subrayado */
+  font-size: 16px; /* Tamaño de fuente */
+  transition: background-color 0.3s, color 0.3s; /* Transición de color */
+}
+
+.btn-saber-mas:active {
+  background-color: #fff; /* Color de fondo al hacer clic */
+  color: #000; /* Color de texto al hacer clic */
+}
+
+/*# sourceMappingURL=archive.css.map */
